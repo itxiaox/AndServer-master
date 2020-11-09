@@ -1,0 +1,16 @@
+apply plugin: plugin.javaLibrary
+
+compileJava {
+    sourceCompatibility = JavaVersion.VERSION_13
+    targetCompatibility = JavaVersion.VERSION_13
+}
+
+dependencies {
+    api project(':annotation')
+//    implementation "javax.activation:javax-activation-api:1.2.0"
+    implementation deps.poet
+    implementation deps.apache.lang
+    implementation deps.apache.collections
+}
+
+apply from: '../bintray.gradle'

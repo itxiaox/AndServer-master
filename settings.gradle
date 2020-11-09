@@ -1,0 +1,6 @@
+include ':annotation'
+include ':api'
+include ':processor'
+include ':plugin'
+include ':sample'
+include ':kotlin-sample'
