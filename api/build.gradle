@@ -33,4 +33,5 @@ dependencies {
     compileOnly deps.android.annotation
 }
 
-apply from: '../bintray.gradle'
+//apply from: '../bintray.gradle'
+apply from: '../publishAndroidLib.gradle'

@@ -13,20 +13,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.yanzhenjie.andserver.sample.controller;
+package com.yanzhenjie.andserver.sample.controller
 
-import com.yanzhenjie.andserver.annotation.Controller;
-import com.yanzhenjie.andserver.annotation.GetMapping;
+import com.yanzhenjie.andserver.annotation.Controller
+import com.yanzhenjie.andserver.annotation.GetMapping
 
 /**
  * Created by Zhenjie Yan on 2018/9/12.
  */
 @Controller
-public class PageController {
-
-    @GetMapping(path = "/")
-    public String index() {
+class PageController {
+    @GetMapping(path = ["/"])
+    fun index(): String {
         // Equivalent to [return "/index"].
-        return "forward:/index.html";
+        return "forward:/index.html"
     }
 }

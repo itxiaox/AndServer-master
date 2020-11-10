@@ -1,3 +1,4 @@
+include ':andwebserver'
 include ':annotation'
 include ':api'
 include ':processor'

@@ -18,10 +18,17 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 }
-
+/**
+ * Execution failed for task ':sample:compileDebugJavaWithJavac'.
+ * > javax/activation/MimeTypeParseException
+ */
 dependencies {
     implementation project(':api')
     annotationProcessor project(':processor')
+//        implementation "com.yanzhenjie.andserver:api:2.1.3"
+//    annotationProcessor "com.yanzhenjie.andserver:processor:2.1.3"
+//    implementation "com.github.itxiaox.AndServer-master:api:1.0.0"
+//    annotationProcessor "com.github.itxiaox.AndServer-master:annotation:1.0.0"
 
     implementation deps.android.material
     implementation deps.android.compat
